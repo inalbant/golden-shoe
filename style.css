@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;    
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto auto 450px; */
+    grid-template-areas: 
+    "header header"
+    "notif notif"
+    "summer pink";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: #5F5F5F;
+}
+
+li {
+    list-style: none;
+}
+
+li > a {
+    padding-bottom: .45em;
+    background:
+     linear-gradient(
+       to bottom, rgb(212, 189, 104) 0%,
+       rgb(212, 189, 104) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+li > a:hover {
+    background-size: 4px 50px;
+    color: white;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    text-transform: uppercase;
+    width: 30%;
+}
+
+#sale {
+    color: rgb(250, 25, 25);
+}
+
+#sale:hover {
+    background-size: 4px 50px;
+    color: white;
+}
+
+.logo {
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+.logo > img {
+    width: 140px;
+}
+
+
+.search > input {
+    padding: 5px 10px;
+    border: none;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+.login {
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.login > img {
+    width: 22px;
+}
+
+.shopping-bag {
+    font-family: 'Raleway';
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.shopping-bag > img {
+    width: 22px;
+}
+
+.notification {
+    grid-area: notif;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    background: #E7E7E7;
+}
+
+.pink-box {
+    background: #EEC2BD;
+    text-transform: uppercase;
+    grid-area: pink;
+}
+
+.summer-shoes {
+    grid-area: summer;
+}
+
+.summer-shoes img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+
