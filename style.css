@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+}
 
 html {
   box-sizing: border-box;
@@ -17,7 +20,10 @@ body {
   "header header"
   "notif notif"
   "summer pinkB"
-  "yelloB yelloB";
+  "yelloB yelloB"
+  "instaH instaH"
+  "instaP instaP"
+  "footer footer";
 }
 
 header {
@@ -25,7 +31,6 @@ header {
   margin: 0.6rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
   justify-content: space-around;
 }
 
@@ -80,7 +85,7 @@ nav {
 
 .logo {
   cursor: pointer;
-  margin: 0 30px;
+  margin: 0 1.2rem;
 }
 
 .logo > img {
@@ -90,7 +95,6 @@ nav {
 
 .search > input {
   padding: 5px 10px;
-  border: none;
   border: solid 1px #ccc;
   border-radius: 5px;
 }
@@ -98,10 +102,13 @@ nav {
 .login {
   font-size: 0.75rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .login > img {
-  width: 22px;
+  width: 22px;  
+  margin: 0 0.2rem;
 }
 
 .login > a:hover {
@@ -112,10 +119,14 @@ nav {
 .shopping-bag {
   cursor: pointer;
   font-size: 0.75rem;
+  display: flex;
+  align-items: center;
 }
 
 .shopping-bag > img {
   width: 22px;
+  /* margin-right: 0.2rem; */
+  margin: 0 0.2rem;
 }
 
 .shopping-bag a:hover {
@@ -211,6 +222,7 @@ nav {
 
 .lady-shoes {  
   width: 35%;
+  position: relative;
 }
 
 .lady-shoes > img {
@@ -220,8 +232,14 @@ nav {
   height: 100%;
   width: auto;
   max-width: 100%;
-  vertical-align: bottom;
-  
+  vertical-align: bottom;  
+}
+
+.lady-shoes .btn {
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  color: #000;
 }
 
 .fathersday {
@@ -236,18 +254,141 @@ nav {
 }
 
 .fathersday > img {
+  cursor: pointer;
   display: block;
   object-fit: cover;
   width: auto;
   max-width: 100%;
-  /* width: auto; */
-  /* height: 80%; */
-  /* height: auto; */
 }
 
-/* .top-p {
-  margin-bottom: 1rem;
-} */
- 
+.insta-header {
+  grid-area: instaH;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.insta-header > h3 {
+  margin: 0.8rem;
+}
+
+.follow-us {
+  display: flex;
+  align-items: center;
+}
+
+.follow-us > img {
+  width: 32px;
+  margin-right: 0.7rem;
+  cursor: pointer;
+}
+
+.follow-us > a:hover {
+  text-decoration: underline;
+  color: silver;
+}
+
+.insta-pics {
+  grid-area: instaP;
+  height: 324px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+
+.insta-pics > img {
+  cursor: pointer;
+  object-fit: cover;
+  width: auto;
+}
+
+.left-pic {
+  position: relative;
+  cursor: pointer;
+  margin-right: 0.6rem;
+  object-fit: cover;
+  width: auto;
+}
+
+.left-chevron {
+  position: absolute; 
+  bottom: 40%; 
+  left: 0;
+  cursor: pointer;
+}
+
+.right-pic {
+  position: relative;
+  cursor: pointer;
+  margin-left: 0.6rem;
+  object-fit: cover;
+  width: auto;
+}
+
+.right-chevron {
+  position: absolute; 
+  bottom: 40%; 
+  right: 0;
+  cursor: pointer;
+}
+
+footer {
+  grid-area: footer;
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  background: #E7E7E7;
+  /* align-items: center; */
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-footer a:hover {
+  text-decoration: underline;
+  color: silver;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+
+.sign-up > p {
+  font-size: 0.85rem; 
+}
+
+.sign-up > input {
+  margin: 0 0.5rem;
+  padding: 5px 10px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+} 
+
+.sign-up {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  display: inline-flex;
+  margin-left: 0.3rem;
+}
+
+.social img {
+  width: 28px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+
+
 
 
